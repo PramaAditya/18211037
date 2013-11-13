@@ -1,18 +1,19 @@
-Almost Flat UI
+Rest Web Service Client
 =======
 
-When using the markup from the demo page, please update the Google Analytics Code to that of your own.
+Ini adalah client dari Rest Web Service yang memberikan response berupa json dari request melewati Rest di RestWebService
 
-Almost Flat UI is licensed under a MIT License. It uses Foundation Framework and is heavily inspired from Flat UI Free by designmodo.
-
-You are allowed to use these elements anywhere you want.
+Di dalam client ini dapat dipilih untuk menampilkan database dari pemain Liverpool, Tim Lain atau pemain dalam Daftar Shortlist baik seluruh data maupun individual
 
 ## Links:
 
-+ [Demo page](http://websymphony.net/almost-flat-ui/)
++ [Demo page](http://prama-aditya/progin/RestWebsiteClient)
 
 ## Author
-**Amit Gaur**
+**Prama Aditya**
 
-+ [http://websymphony.net](http://websymphony.net)
-+ [http://twitter.com/websymphony](http://twitter.com/websymphony)
++ [http://twitter.com/prama13](http://twitter.com/prama13)
+
+**Mekaputra Yudahandika**
+
++ [http://twitter.com/mekaputra](http://twitter.com/mekaputra)
