@@ -10,11 +10,11 @@
     </head>
     <body>
 
-    	<div class="center">
+        <div class="center">
             <h1>FM SuperSoccer Helper</h1>
             <h5>by Prama Aditya (18211037) and Mekaputra Yudahandika (182110)</h5>
-    	   <br/>
-        	<div id="playerkarusel" class="center"></div>
+           <br/>
+            <div id="playerkarusel" class="center"></div>
         
             <script id="playertpl" type="text/template">
                 <div class="flat-table" >
@@ -50,7 +50,7 @@
             </form> 
             
         </div>
-		<script src="jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script src="jquery-1.10.2.min.js" type="text/javascript"></script>
         <script src="mustache.js"></script>  
         <script>
             function enableob(o) { eval(o+".disabled = false"); }
@@ -77,14 +77,14 @@
             var playerid = document.getElementById("playerid").value;
             var database =  document.getElementById("database").value;
             if (banyak==false)
-            var getJSONurl = 'http://localhost:8888/RestWebService/index.php/api/'+database+'/player/id/'+playerid+'/format/json.json';
+            var getJSONurl = 'http://localhost:8888/progin/RestWebService/index.php/api/'+database+'/player/id/'+playerid+'/format/json.json';
             else
-            var getJSONurl = 'http://localhost:8888/RestWebService/index.php/api/'+database+'/players/format/json.json';
-           	$.getJSON(getJSONurl, function (data){
-           		var template = $('#playertpl').html();
-           		var html = Mustache.to_html(template,data);
-           		$('#playerkarusel').html(html);
-           	});
+            var getJSONurl = 'http://localhost:8888/progin/RestWebService/index.php/api/'+database+'/players/format/json.json';
+            $.getJSON(getJSONurl, function (data){
+                var template = $('#playertpl').html();
+                var html = Mustache.to_html(template,data);
+                $('#playerkarusel').html(html);
+            });
             }
         </script>
         
