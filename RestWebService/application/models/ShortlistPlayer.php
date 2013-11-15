@@ -1,6 +1,6 @@
 <?php
 
-class ShortlistPlayer extends CI_Model {
+class Shortlistplayer extends CI_Model {
 	
 	//constructor
 	public function __construct(){

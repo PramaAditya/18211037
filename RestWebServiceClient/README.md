@@ -7,7 +7,7 @@ Di dalam client ini dapat dipilih untuk menampilkan database dari pemain Liverpo
 
 ## Links:
 
-+ [Demo page](http://prama-aditya/progin/RestWebsiteClient)
++ [Demo page](http://prama-aditya/progin/RestWebsiteServiceClient)
 
 ## Author
 **Prama Aditya**

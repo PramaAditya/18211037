@@ -25,7 +25,7 @@ class Shortlist extends REST_Controller
         	$this->response(NULL, 400);
         }
 
-        $players = $this->ShortlistPlayer->get_array();
+        $players = $this->Shortlistplayer->get_array();
     	/*$players = array(
 			1 => array('id' => 1, 'name' => 'Some Guy', 'email' => 'example1@example.com', 'fact' => 'Loves swimming'),
 			2 => array('id' => 2, 'name' => 'Person Face', 'email' => 'example2@example.com', 'fact' => 'Has a huge face'),
@@ -65,7 +65,7 @@ class Shortlist extends REST_Controller
     
     function players_get()
     {
-         $players = $this->ShortlistPlayer->get_array();
+         $players = $this->Shortlistplayer->get_array();
         
         if($players)
         {

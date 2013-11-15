@@ -1,6 +1,6 @@
 <?php
 
-class OtherPlayer extends CI_Model {
+class Otherplayer extends CI_Model {
 	
 	//constructor
 	public function __construct(){

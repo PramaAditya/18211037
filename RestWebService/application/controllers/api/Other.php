@@ -12,7 +12,7 @@ class Other extends REST_Controller
         	$this->response(NULL, 400);
         }
 
-        $players = $this->OtherPlayer->get_array();
+        $players = $this->Otherplayer->get_array();
     	/*$players = array(
 			1 => array('id' => 1, 'name' => 'Some Guy', 'email' => 'example1@example.com', 'fact' => 'Loves swimming'),
 			2 => array('id' => 2, 'name' => 'Person Face', 'email' => 'example2@example.com', 'fact' => 'Has a huge face'),
@@ -38,7 +38,7 @@ class Other extends REST_Controller
     
     function players_get()
     {
-         $players = $this->OtherPlayer->get_array();
+         $players = $this->Otherplayer->get_array();
         
         if($players)
         {

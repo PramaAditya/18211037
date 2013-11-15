@@ -1,6 +1,6 @@
 <?php
 
-class LiverpoolPlayer extends CI_Model {
+class Liverpoolplayer extends CI_Model {
 	
 	//constructor
 	public function __construct(){

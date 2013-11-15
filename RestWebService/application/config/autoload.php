@@ -156,7 +156,7 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array('LiverpoolPlayer','OtherPlayer','ShortlistPlayer');
+$autoload['model'] = array('Liverpoolplayer','Otherplayer','Shortlistplayer');
 
 
 /* End of file autoload.php */
