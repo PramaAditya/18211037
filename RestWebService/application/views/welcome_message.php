@@ -1,116 +1,98 @@
 <?php
-/**
- * CodeIgniter
- *
- * An open source application development framework for PHP 5.2.4 or newer
- *
- * NOTICE OF LICENSE
- *
- * Licensed under the Academic Free License version 3.0
- *
- * This source file is subject to the Academic Free License (AFL 3.0) that is
- * bundled with this package in the files license_afl.txt / license_afl.rst.
- * It is also available through the world wide web at this URL:
- * http://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to obtain it
- * through the world wide web, please send an email to
- * licensing@ellislab.com so we can send you a copy immediately.
- *
- * @package		CodeIgniter
- * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2008 - 2013, EllisLab, Inc. (http://ellislab.com/)
- * @license		http://opensource.org/licenses/AFL-3.0 Academic Free License (AFL 3.0)
- * @link		http://codeigniter.com
- * @since		Version 1.0
- * @filesource
- */
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
+?>
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
-
-	<style type="text/css">
-
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
-	::-webkit-selection { background-color: #E13300; color: white; }
-
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
-
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
-
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
-
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
-
-	#body {
-		margin: 0 15px 0 15px;
-	}
-
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		-moz-box-shadow: 0 0 8px #D0D0D0;
-		-webkit-box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
+	<!-- META -->
+	<title>HTML KickStart Elements</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="" />
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/kickstart.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/style.css" media="all" /> 
+	
+	<!-- Javascript -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url() ?>js/kickstart.js"></script>
 </head>
 <body>
-
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
-
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+<div class="grid">
+	<div class="col_12">
+		<h1 class="center">Selamat Datang</h1>
+		<h5 class="center subtitle">di Web Service dari</h5>
+		<h6 class="center subtitle">Prama Aditya dan Mekaputra Yudhandika</h6>
+		<hr class="alt2" />
 	</div>
-
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+</div> <!-- End Grid -->
+<div class="grid">
+	<div class="col_12">
+		<h3>Penjelasan</h3>
+		<p>
+			Ini adalah Server dari Rest Web Service yang menyediakan service berupa pengambilan data dari 3 database yaitu:
+		</p>
+		<ul>
+			<li>Liverpool</li>
+			<li>Other</li>
+			<li>Shortlist</li>
+		</ul>
+	<p>Service ini menggunakan arsitektur REST dan mampu memberikan response dalam bentuk JSON dan XML</p>
+		</p>
+		<hr class="alt2" />
+	</div>
 </div>
+<div class="grid">
+	<div class="col_12">
+		<h3>Cara Penggunaan REST</h3>
+	</div>
+</div>
+<div class="grid">
+	<div class="col_4">
+		<h5>Database Liverpool</h5>
+		<p>Data pemain Liverpool dapat diakses dengan</p>
+		<pre>
+		./18211037/RestWebService/index.php/api/<em>Liverpool</em>/players/format/xml.xml
+		</pre>
+		<a href="http://prama-aditya.com/progin/RestWebService/index.php/api/Liverpool/players/format/xml.xml"><button class="medium"><i class="icon-coffee"></i> Try It!</button></a>
+	</div>
+	<div class="col_4">
+		<h5>Database Other</h5>
+		<p>Data pemain Other dapat diakses dengan</p>
+		<pre>
+		./18211037/RestWebService/index.php/api/<em>Other</em>/players/format/xml.xml
+		</pre>
+		<a href="http://prama-aditya.com/progin/RestWebService/index.php/api/Other/players/format/xml.xml"><button class="medium"><i class="icon-coffee"></i> Try It!</button></a>
+	</div>
+	<div class="col_4">
+		<h5>Database Shortlist</h5>
+		<p>Data pemain Shortlist dapat diakses dengan</p>
+		<pre>
+		./18211037/RestWebService/index.php/api/<em>Shortlist</em>/players/format/xml.xml
+		</pre>
+		<a href="http://prama-aditya.com/progin/RestWebService/index.php/api/Shortlist/players/format/xml.xml"><button class="medium"><i class="icon-coffee"></i> Try It!</button></a>
+	</div>
+</div>
+<div class="grid">
+	<div class="col_6">
+		<h5>Banyak Pemain</h5>
+		<p>Untuk mengakses banyak pemain, maka digunakan parameter <em>players</em></p>
+		<pre>
+		./18211037/RestWebService/index.php/api/Liverpool/<em>players</em>/format/xml.xml
+		</pre>
+		<a href="http://prama-aditya.com/progin/RestWebService/index.php/api/Liverpool/players/format/xml.xml"><button class="medium"><i class="icon-coffee"></i> Try It!</button></a>
+	</div>
+	<div class="col_6">
+		<h5>Satu Pemain</h5>
+		<p>Untuk mengakses salah satu pemain dengan id tertentu, maka digunakan parameter <em>player</em> dan ditambahkan parameter id</p>
+		<pre>
+		./18211037/RestWebService/index.php/api/Liverpool/<em>player/id/1/</em>format/xml.xml
+		</pre>
+		<a href="http://prama-aditya.com/progin/RestWebService/index.php/api/Liverpool/player/id/1/format/xml.xml"><button class="medium"><i class="icon-coffee"></i> Try It!</button></a>
+	</div>
+	<hr class="alt2" />
+</div>	
 
 </body>
 </html>
